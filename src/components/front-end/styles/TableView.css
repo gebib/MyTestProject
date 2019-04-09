@@ -1,0 +1,11 @@
+.gridprimaryContainer{
+    background-color: rgb(255, 255, 255);
+    padding: 0px;
+    height:100vh;
+    padding-left: 3%;
+    padding-right: 3%;
+    overflow: scroll;
+  }
+
+
+
