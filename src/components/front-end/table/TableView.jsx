@@ -2,21 +2,32 @@ import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import '../styles/TableView.css';
 import {
-    Row, Col, Table, Button, Tooltip, FormGroup,
+    ButtonToolbar, Navbar, Row, Col, Table, Button, Tooltip, FormGroup,
     InputGroup, FormControl, OverlayTrigger, ButtonGroup, ProgressBar, TableRow
 } from 'react-bootstrap';
 
 class TableView extends Component {
     state = {}
+
+    //reload the api to update current status
+    updateStatus = () => {
+        console.log('////update///');
+    }
     render() {
         return (
             <div className="gridprimaryContainer container">
-                <Row>
-                    <Col xs={12} md={12}>
-                    ////////////++ oversikt: knapp? auto reload?
-                    </Col>
-                </Row>
-                <Table striped bordered  hover>
+                <div className="bg-light py-1">
+                    <ButtonToolbar>
+                        <h4>Oversikt for Oslo Bysykkel</h4>
+                    </ButtonToolbar>
+                </div>
+                <div className="bg-light py-1">
+                    <ButtonToolbar>
+                        <Button variant="secondary" block onClick={this.updateStatus}> Oppdater </Button>
+                    </ButtonToolbar>
+                </div>
+
+                <Table striped bordered hover>
                     <thead>
                         <tr>
                             <th>Stasjon</th>
