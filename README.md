@@ -18,4 +18,4 @@ For Linux: (samme førkrav):
 
 ## Demo
 Applikasjonens demo er også hostet på github. klikk lenken nedenfor, for a kjøre den online.
-[MyTestProject](https://saleall.github.io/MyTestProject)
+[MyTestProject](https://gebib.github.io/MyTestProject/)
